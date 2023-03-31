@@ -1,0 +1,15 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant page that dynamically laod contents with Js",
+  "main": "index.js",
+  "scripts": {
+    "test": " "
+  },
+  "author": "Seena",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
