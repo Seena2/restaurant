@@ -1,10 +1,11 @@
 {
-  "name": "restaurant",
+  "name": "eva",
   "version": "1.0.0",
-  "description": "Restaurant page that dynamically laod contents with Js",
-  "main": "index.js",
+  "description": "eva website reloaded with JS",
+  "private":true,
   "scripts": {
-    "test": " "
+    "test": " echo \"error: no test specified\" && exit 1",
+    "build":"webpack"
   },
   "author": "Seena",
   "license": "ISC",
