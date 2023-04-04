@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation Menu TOP*/
+.header{
+    background-color: #fbfb99;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.nav {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+    list-style-type: none;
+}
+
+.top_nav {
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    gap: 1.2rem;
+    text-decoration: none;
+}
+
+
+.main_nav {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: sticky;
+}
+/*hero_slider*/
+.hero_slider{
+    height:20rem;
+    width: 100vw;
+    justify-content: center;
+}
+
+/*president Message*/
+.pres_msg{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.pres_img{
+    height: 8rem;
+    width: 8rem;
+}
+.president-msg {
+    margin-top: 2rem;
+    text-align: center;
+}
+.msg{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.section_header {
+    background-color: #fbfb99;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.card3{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.2rem;
+}
+.card{
+    margin:1rem;
+   
+    justify-content: space-around;
+}
+
+.partner_logo{
+    width: 5rem;
+    padding: 0 3rem 0 2rem;
+}
+.footer{
+    margin-top: 1.2rem;
+    background-color: black;
+   display: grid;
+   grid-template-rows: 3fr 1fr;
+   gap:2rem;
+}
+.footer_card{
+    background-color: #2e2c2c;;
+    color: #fff;
+    justify-content: space-around;
+}
+.copyright{
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    justify-content: end;
+}
