@@ -207,6 +207,9 @@
                                         <option value="governmental">Governmental</option>
                                         <option value="non_governmental">Non-Governmental(International
                                             organizations,Associations,..)</option>
+                                        <option value="private">Private</option>
+                                        <option value="own_business">Runs own business</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <div>
@@ -301,7 +304,8 @@
                                     <input class="textbox" type="text" id="Rm_phdUnivesity">
                                 </div>
                                 <div>
-                                    <label for="Rm_otherQualifications">If you have any other qualifications,please list
+                                    <label for="Rm_otherQualifications">If you have any other qualifications, please
+                                        list
                                         here.</label>
                                     <textarea class="textbox" name="qualification" id="Rm_otherQualifications" cols="30"
                                         rows="10"></textarea>
@@ -401,6 +405,26 @@
                                         <label for="honorary">Honorary</label><br>
                                     </div>
                                 </div>
+                                <div>
+                                    <fieldset>
+                                        <legend>Membership fee</legend>
+                                        <p>Dear applicant, the registration fee for regular members is 350 Ethiopian
+                                            Birr.
+                                            Kindly, transfer the payment to the bank account of Ethiopian Veterinary
+                                            Association, indicated below : </p>
+                                        <div>
+                                            <p>Bank Name: Commercial Bank of Ethiopia </p>
+                                            <p>Bank Branch Address: Addis Ababa, Cape Verde Street</p>
+                                            <p>Swift Code: CBETATAA</p>
+                                            <p>AccountNumber:1000050555333</p>
+                                            <p>Account Holder’s Name: Ethiopian Veterinary Association </p>
+                                        </div>
+                                        <p>Once you have made the payment, please sent us the scanned copy of your bank receipt or screen shoot of the mobile banking payment receipt (if you have used the mobile banking).</p>
+                                    <p>Please note that, your registration will only be complete after a payment receipt is received by the association.</p>
+                                    <label for="registration_reciept">Upload your receipt here*</label>
+                                    <input  id="registration_reciept" type="file">
+                                </fieldset>
+                                </div>
                                 <fieldset>
                                     <legend>confirmation</legend>
                                     <p class="justify">I have carefully read the Ethiopian Veterinary Association
@@ -410,13 +434,15 @@
                                     <div>
                                         <p> With this in mind, I apply*</p>
                                         <div class="justify">
-                                            <input type="radio" id="regular" name="membership_type" value="regular">
-                                            <label for="regular"> to be registered as a new member</label><br>
-                                            <input type="radio" id="cooperative" name="membership_type"
-                                                value="cooperative">
-                                            <label for="cooperative">Cooperative</label><br>
-                                            
+                                            <input type="radio" id="new_member" name="registration_type"
+                                                value="new_member">
+                                            <label for="new_member"> to be registered as a new member or</label><br>
+                                            <input type="radio" id="renewal" name="registration_type" value="renewal">
+                                            <label for="renewal"> renewal of my membership</label><br>
+
                                         </div>
+                                        <div><button>Go back</button>&nbsp;
+                                        <button>Submit</button></div>
                                     </div>
                                 </fieldset>
 
