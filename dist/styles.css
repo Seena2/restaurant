@@ -28,19 +28,25 @@
     text-align: center;
     text-decoration: none;
     padding: 0.4rem;
+    font-size: 1rem;
+}
+.main_nav li a{
     font-size: 1.2rem;
+    padding: 0.2rem;
 }
 .nav ul a:hover{
     font-size: 1.3rem;
-    color:#3082c5;
+    color:#fff;
     text-shadow: #2e2c2c;
     border-radius: 5px;
     padding: 5px;
+    background-color:#3082c5;
+    ;
 }
 .logo{
     width: 100px;
     border-radius: 50%;
-    list-style-type: none;
+    padding: 0.3rem;
 }
 
 .top_nav {
