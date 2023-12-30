@@ -23,9 +23,7 @@
     border-radius: 50%;
     margin:.3rem;
 }
-.mobile{
-    display: none;
-}
+
 nav ul { 
     display: flex;
     align-items: center;
@@ -50,7 +48,7 @@ nav ul li a:hover{
 .account ul li{
     padding: 0 15px;
 }
-.search{
+.search-box{
     display: none;
     width: 200px;
     justify-content: center;
@@ -63,10 +61,10 @@ nav ul li a:hover{
     padding: 0.25rem;
 }
 .search-icon{
-    background-color: #ec930c;
     display: block;
     padding: .2rem .25rem;
     cursor: pointer;
+    align-self: center;
 }
 .welcome{
     padding-left: 2rem;
@@ -90,3 +88,58 @@ footer{
     color: #fff;
     background: #272525;
 }
+
+
+
+@media only screen and (max-width: 760px) {
+    body {
+      background-color: lightblue;
+    }
+    .mobile, nav, .account{
+        display:none;
+    }
+    .search{
+        width: 60vw;
+    }
+    .mobile-btns{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+        background-color: #e0f336;
+    }
+    .mobile .account, .header .nav{
+        display: block;
+        font-size: 1.2rem;
+    }
+    .header .nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.7rem;
+        text-align: center;
+    }
+    
+    .header .nav ul li{
+        width: 90vw;
+        margin: 0.6rem 0;
+        box-shadow: 0 2px 5px #272525;
+        background-color: #fff;
+    }
+    .header .account{
+        line-height: 2.5rem;
+        margin-top: 2rem;
+        background-color: aliceblue;
+    }
+    .header .account ul{
+        justify-content: space-between;
+    }
+   
+  }
