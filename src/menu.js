@@ -3,7 +3,7 @@
 const CreateMenuPage=()=>{
     const content= document.querySelector('#content');
     const pageContent=document.createElement('div');
-    pageContent.classList.add('page-style');
+    pageContent.classList.add('page-content');
     
     //create heading
     const heading= document.createElement('h3');
@@ -21,6 +21,7 @@ const CreateMenuPage=()=>{
     menuList.appendChild(menuItem2);
     menuList.appendChild(menuItem3);
 
+    pageContent.appendChild(heading);
     pageContent.appendChild(menuList);
     content.appendChild(pageContent);
     

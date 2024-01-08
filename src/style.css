@@ -1,3 +1,4 @@
+/* reset*/
 *{
     margin: 0;
     padding:0;
@@ -7,18 +8,51 @@
     color: #000;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/* reset */
+body,
+p,
+h1,
+h2,
+h3,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* varaibles */
+:root {
+    --yellow: #eef58f;
+    --blue: #2d71d6;
+    --lightblue: #c2defd;
+    --gray: #5c5c5a;
+    --black: #222222;
+    --bg: #ffffff;
+}
+
+
+.page-content{
+    background-color: #cfeafa;
+}
 .header{
     background-color: #4295da;
     border-bottom: 2px solid #130101;
     box-shadow: 0 2px 20px #130101;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 110px;
     padding: 0 7vw;
     
 }
-.logo img{
+
+.logo{
+    display: flex;
+}
+.logoImg{
     width: 100px;
     border-radius: 50%;
     margin:.3rem;
@@ -35,12 +69,28 @@ nav ul li{
 }
 
 nav ul li a:hover{
-    color:#ec930c;
+    color:#f3ca8d;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
 }
-.account{
+
+/*tabs*/
+.tab{
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: 1px solid #130101;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.account  {
     flex: 0.1;
+    justify-content: space-between;
+    gap: 1rem;
 }
+
 .account ul{
     display: flex;
     justify-content: end;
@@ -66,23 +116,25 @@ nav ul li a:hover{
     cursor: pointer;
     align-self: center;
 }
-.welcome{
-    padding-left: 2rem;
-}
-.space{
-    padding-left: 2rem;
-}
+
 .foods{
     padding-left: 2rem;
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap:1rem;
     justify-content: space-around;
+    align-items: center;
 }
-.foods img{
+.foods div {
+    justify-self: center;
+    justify-items: center;
+}
+.foods div img{
     width:200px;
     height:150px;
     border-radius: 20px;
+    justify-content: center;
+    
 }
 footer{
     color: #fff;
@@ -141,5 +193,4 @@ footer{
     .header .account ul{
         justify-content: space-between;
     }
-   
-  }
+} 

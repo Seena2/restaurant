@@ -1,11 +1,14 @@
-import CreateRestaurantHomePage from './home'
+//import the style
+import './style.css';
+import createHomePage from './restauranthome';
 import CreateTabs from './tabs';
 
-function InitialLoad(){
+
+function initialLoad(){
     CreateTabs();
-    CreateRestaurantHomePage();
+    createHomePage();
 }
 
 
 //export the function
-export default InitialLoad;
+export default initialLoad;

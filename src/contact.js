@@ -1,9 +1,11 @@
 //Module to create the Contact page
+//import the style
+import './style.css';
 
 const CreateContactPage=()=>{
 const content= document.querySelector('#content');
 const pageContent=document.createElement('div');
-pageContent.classList.add('page-style');
+pageContent.classList.add('page-content');
 
 //create contact form to dynamically added to the page
 const contactForm= document.createElement('form');
